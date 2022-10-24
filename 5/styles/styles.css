@@ -81,13 +81,13 @@ body{
   background-repeat:no-repeat;
   text-align: center;
 }
-.main-container{
+.main-page{
   flex-grow: 1;
 }
-.page-container{
+.container{
   width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 .sedona-title{
   font-weight: 700;
@@ -220,10 +220,8 @@ body{
   background-color: #ffffff;
   color: #000000;
 }
-.page-footer-container{
+.page-footer{
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 .footer-social-list{
   display: flex;
