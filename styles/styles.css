@@ -21,7 +21,7 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100%;
-  font-family: "PT Sans", "Arial" serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   background: #F2F2F2;
@@ -38,11 +38,12 @@ body{
 }
 .btn{
   padding: 8px 50px;
-  font-family: 'inherit';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -105,7 +106,6 @@ body{
   background-repeat: no-repeat;
 }
 .sedona-title{
-  font-family: 'PT Sans';
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -114,7 +114,6 @@ body{
   text-align: center;
 }
 .reasons{
-  font-family: 'PT Sans';
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -141,7 +140,6 @@ body{
   height: 384px;
 }
 .advantages-description{
-  font-family: 'PT Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -150,7 +148,6 @@ body{
 .advantages-title{
   margin-top: 92px;
   text-align: center;
-  font-family: 'PT Sans';
   text-transform: uppercase;
 }
 .advantages-item-lightblue{
@@ -231,12 +228,8 @@ body{
   line-height: 24px;
   color: #FFFFFF;
 }
-.infrastructure-filter-group{
-  width: 150.43px;
-  height: 157px;
-}
-.accommodation-filter-group{
-  width: 150.43px;
+.filter-group{
+  width: 150px;
   height: 157px;
 }
 .control{
@@ -262,7 +255,6 @@ body{
 .pagination{
   display: flex;
   margin: 0;
-  list-style-type: none;
 }
 .pagination-link{
   color: #ffffff;
