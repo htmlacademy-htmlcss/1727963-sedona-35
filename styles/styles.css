@@ -902,19 +902,14 @@ body {
 
 .range-input:active {
   background: #F2F2F2;
-  border: 2px solid #000000;
-  border-radius: 4px 0 0 4px;
 }
 
 .range-input:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
-  border-radius: 4px 0 0 4px;
 }
 
 .range-input-max {
-  border-radius: 0 4px 4px 0;
-  margin-left: 2px;
+ margin-left: 2px;
 }
 
 .range-toggle:hover {
