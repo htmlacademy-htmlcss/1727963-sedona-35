@@ -573,7 +573,7 @@ body {
   position: absolute;
   width: 17px;
   height: 24px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1083,7 +1083,7 @@ body {
 }
 
 .title-form {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1096,7 +1096,7 @@ body {
 
 .description-date {
   margin: 0 0 23px 137px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
