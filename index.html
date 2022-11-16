@@ -8,9 +8,10 @@
     <link rel="icon" href="favicon.ico">
   </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
+  <body class="page-body">
+    <div class="container page-conteiner">
+      <header class="header">
+
         <nav class="navigation">
           <a class="navigation-logo" href="https://htmlacademy.ru/"><img src="images/logo.svg" width="140" height="70"
               alt="Логотип города Седона"></a>
@@ -46,10 +47,10 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main class="main-page main-index">
-      <div class="container">
+
+      </header>
+      <main class="main-page main-index">
+
         <div class="hero-block"> <img class="welcome-logo" src="images/welcome.svg" alt="welcome-vector"> <img
             class="divider" src="images/divider.svg" alt="divider">
         </div>
@@ -93,19 +94,19 @@
                 вы осмелитесь, разумеетсяь</p>
             </li>
             <li class="advantages-item advantages-item-lightblue">
-              <img class="advantages-icons" src="/images/icons/home-icon.svg" alt="home-icon">
+              <img class="advantages-icons" src="./images/icons/home-icon.svg" alt="home-icon">
               <h3 class="advantages-title advantages-title-icons">Жильё</h3>
               <p class="advantages-description advantages-description-icons">Рекомендуем пожить в настоящем
                 мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-item">
-              <img class="advantages-icons" src="/images/icons/food-icon.svg" alt="food-icon">
+              <img class="advantages-icons" src="./images/icons/food-icon.svg" alt="food-icon">
               <h3 class="advantages-title advantages-title-icons">Еда</h3>
               <p class="advantages-description advantages-description-icons">Всегда заказывайте топовый фирменный
                 бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item-lightblue">
-              <img class="advantages-icons" src="/images/icons/gift-icon.svg" alt="gift-icon">
+              <img class="advantages-icons" src="./images/icons/gift-icon.svg" alt="gift-icon">
               <h3 class="advantages-title advantages-title-icons">Сувениры</h3>
               <p class="advantages-description advantages-description-icons">Не только китайского, но и настоящего
                 местного производства!</p>
@@ -133,10 +134,10 @@
             </form>
           </div>
         </section>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
+
+      </main>
+      <footer>
+
         <div class="page-footer">
           <ul class="footer-social-list list-reset">
             <li class="footer-social-item">
@@ -164,52 +165,54 @@
 
           </a>
         </div>
-      </div>
-    </footer>
-    <div class="modal-container">
-      <div class="modal modal-date">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <section class="modal-content">
-          <h2 class="modal-title">поиск гостиницы в седоне</h2>
-          <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="title-form" for="date-checkin">Дата заезда:</label>
-              <input class="view-input date-form-field" type="date" id="date-checkin" name="date-checkin">
-            </p>
-            <p class=" description-date description-date-past">мы не можем отправить вас в прошлое</p>
-            <p class="field-group">
-              <label class="title-form" for="date-checkin">Дата выезда:</label>
-              <input class=" view-input date-form-field " type="date" id="date-checkout" name="date-checkin">
-            </p>
-            <p class="description-date">На эти даты есть свободные номера.Пока есть</p>
-            <div class="choice-people">
-              <p class="field-group field-group-number">
-                <label class="title-form" for="choice-adults">Взрослые:</label>
-                <input class="view-input number-form-field " type="number" id="choice-adults" name="choice-adults"
-                  placeholder="1">
+
+      </footer>
+      <div class="modal-container">
+        <div class="modal modal-date">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">поиск гостиницы в седоне</h2>
+            <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="title-form" for="date-checkin">Дата заезда:</label>
+                <input class="view-input date-form-field" type="date" id="date-checkin" name="date-checkin">
               </p>
-              <p class="field-group field-group-number ">
-                <label class="title-form title-form-children" for="choice-children">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                    лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-                <input class="view-input number-form-field" type="number" id="choice-children" name="choice-children"
-                  placeholder="2">
+              <p class=" description-date description-date-past">мы не можем отправить вас в прошлое</p>
+              <p class="field-group">
+                <label class="title-form" for="date-checkin">Дата выезда:</label>
+                <input class=" view-input date-form-field " type="date" id="date-checkout" name="date-checkin">
               </p>
-            </div>
-            <button class="btn btn-accent btn-form btn-modal">найти</button>
-          </form>
-        </section>
+              <p class="description-date">На эти даты есть свободные номера.Пока есть</p>
+              <div class="choice-people">
+                <p class="field-group field-group-number">
+                  <label class="title-form" for="choice-adults">Взрослые:</label>
+                  <input class="view-input number-form-field " type="text" id="choice-adults" name="choice-adults"
+                    placeholder="1">
+                </p>
+                <p class="field-group field-group-number ">
+                  <label class="title-form title-form-children" for="choice-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      18
+                      лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <input class="view-input number-form-field" type="text" id="choice-children" name="choice-children"
+                    placeholder="2">
+                </p>
+              </div>
+              <button class="btn btn-accent btn-form btn-modal">найти</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
