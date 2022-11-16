@@ -659,6 +659,7 @@ body {
   flex-wrap: wrap;
   margin: 0 70px;
 }
+
 .hotels-card {
   display: inline-grid;
   grid-template-columns: 140px 140px;
@@ -728,6 +729,7 @@ body {
 .names {
   margin: 0;
 }
+
 .hotels-card:last-child {
   margin-top: 20px;
 }
@@ -909,7 +911,7 @@ body {
 }
 
 .range-input-max {
- margin-left: 2px;
+  margin-left: 2px;
 }
 
 .range-toggle:hover {
