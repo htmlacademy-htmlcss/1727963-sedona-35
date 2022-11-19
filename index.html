@@ -43,7 +43,7 @@
             </li>
             <li>
               <button class="btn btn-primary btn-navigation" type="button">
-                Хочу сюда! </button>
+                Хочу сюда!<!--<a class="navigation-link-btn" href="catalog.html"</a> >--></button>
             </li>
           </ul>
         </nav>
@@ -91,7 +91,7 @@
             <li class="advantages-image"> <img src="images/canyon_photo.jpg" width="800" height="384"
                 alt="Фото коньона."> </li>
             <li class="advantages-item advantages-item-blue">
-              <h3 class="advantages-title advantages-title-white">Там есть<br /> мост дьявола</h3>
+              <h3 class="advantages-title advantages-title-white">Там есть<br/> мост дьявола</h3>
               <div class="line"></div>
               <p class="advantages-description advantages-description-white">Да, по нему можно пройти! Если
                 вы осмелитесь, разумеетсяь</p>
@@ -99,26 +99,26 @@
             <li class="advantages-item advantages-item-lightblue">
               <img class="advantages-icons" src="./images/icons/home-icon.svg" width="75" height="72" alt="дом.">
               <h2 class="advantages-title advantages-title-icons">Жильё</h2>
-              <p class="advantages-description advantages-description-icons">Рекомендуем пожить <br /> в настоящем
+              <p class="advantages-description advantages-description-icons">Рекомендуем пожить <br/> в настоящем
                 мотеле,<br /> всё как в кино!</p>
             </li>
             <li class="advantages-item">
               <img class="advantages-icons" src="./images/icons/food-icon.svg" width="75" height="72" alt="бургер.">
               <h3 class="advantages-title advantages-title-icons">Еда</h3>
-              <p class="advantages-description advantages-description-icons">Всегда заказывайте <br />топовый фирменный
+              <p class="advantages-description advantages-description-icons">Всегда заказывайте <br/>топовый фирменный
                 бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item-lightblue">
               <img class="advantages-icons" src="./images/icons/gift-icon.svg" width="75" height="72" alt="подарок.">
               <h3 class="advantages-title advantages-title-icons">Сувениры</h3>
-              <p class="advantages-description advantages-description-icons">Не только китайского, <br />но и настоящего
+              <p class="advantages-description advantages-description-icons">Не только китайского, <br/>но и настоящего
                 местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="interest">
           <h2 class="interest-title">Заинтересовались?</h2>
-          <p class="best-offers">Укажите предполагаемые даты поездки,<br />и
+          <p class="best-offers">Укажите предполагаемые даты поездки,<br/>и
             мы покажем вам лучшие предложения
             гостиниц в Седоне
           </p>
@@ -132,7 +132,7 @@
             <form class="appointment-form-mail" action="https://echo.htmlacademy.ru/" method="post">
 
               <label for="email" class="visually-hidden">Email</label>
-              <input class="field" id="email" type="email" placeholder="Ваш e-mail">
+              <input class="field" id="email" type="email" placeholder="Ваш e-mail" required>
 
               <button class="btn  btn-accent-form" type="submit">Подписаться</button>
             </form>
@@ -145,8 +145,7 @@
         <div class="page-footer">
           <ul class="footer-social-list list-reset">
             <li class="footer-social-item">
-              <a class="footer-social-link foo" href="https://vk.com/htmlacademy">
-
+              <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
 
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
@@ -209,32 +208,46 @@
       </footer>
       <div class="modal-container">
         <div class="modal modal-date">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">поиск гостиницы в седоне</h2>
+
             <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
-                <label class="title-form" for="date-checkin">Дата заезда:</label>
-                <input class="view-input date-form-field" type="date" id="date-checkin" name="date-checkin">
+                <label class="title-form-modal" for="date-checkin">Дата Заезда:</label>
+                <input class="view-input date-form-field" type="date" id="date-checkin" name="date-checkin" required>
               </p>
-              <p class=" description-date description-date-past">мы не можем отправить вас в прошлое</p>
+              <p class=" description-date description-date-past">Мы не можем отправить вас в прошлое</p>
               <p class="field-group">
-                <label class="title-form" for="date-checkin">Дата выезда:</label>
-                <input class=" view-input date-form-field " type="date" id="date-checkout" name="date-checkin">
+                <label class="title-form-modal" for="date-checkin">Дата Выезда:</label>
+                <input class=" view-input date-form-field " type="date" id="date-checkout" name="date-checkin" required>
               </p>
               <p class="description-date">На эти даты есть свободные номера.Пока есть</p>
               <div class="choice-people">
                 <p class="field-group field-group-number">
 
-                  <label class="title-form" for="choice-adults">Взрослые:</label>
-
-                  <input class="view-input number-form-field " type="text" id="choice-adults" name="choice-adults"
-                    placeholder="1">
+                  <label class="title-form-modal" for="appointment-guests">Взрослые:</label>
                 </p>
-                <p class="field-group field-group-number ">
-                  <label class="title-form title-form-children" for="choice-children">Дети:</label>
+                <div class="modal-control">
+                  <button class="btn-modal-min btn-min" type="button">
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+
+                  </button>
+                  <input readOnly class="input" type="number" id="appointment-guests" name="input" value="2"
+                    required="">
+                  <button class="btn-modal-min btn-plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </div>
+
+                <p class="field-group field-group-number field-group-children ">
+                  <label class="title-form-modal" for="appointment-guests-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button">
                       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,12 +259,25 @@
                     <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
                       18
                       лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
-                  <input class="view-input number-form-field" type="text" id="choice-children" name="choice-children"
-                    placeholder="2">
-                </p>
+                  </span></p>
+                <div class="modal-control modal-control-children">
+                  <button class="btn-modal-min btn-min" type="button">
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+
+                  </button>
+                  <input readOnly class="input" type="number" id="appointment-guests-children" name="input" value="2"
+                    required="">
+                  <button class="btn-modal-min btn-plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+
+                  </button>
+                </div>
               </div>
-              <button class="btn btn-accent btn-form btn-modal">найти</button>
+              <button class="btn btn-form btn-modal">найти</button>
             </form>
           </section>
         </div>
