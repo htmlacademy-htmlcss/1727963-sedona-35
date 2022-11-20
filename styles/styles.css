@@ -13,7 +13,17 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
 body {
   min-width: 1280px;
   display: flex;
@@ -310,12 +320,21 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
+.navigation-link-this::before{
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  height: 2px;
+  bottom: -1px;
+  background-color: #756257;
+  content: "";
+}
 .navigation-link-user {
   padding: 20px 16px;
 }
 
 .main-page {
+  position: relative;
   flex-grow: 1;
 }
 
@@ -324,7 +343,13 @@ body {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
 }
-
+.divider{
+  position: absolute;
+  background-image: url("../images/divider.svg");
+  height: 57px;
+  top: 428px;
+  width: 1200px;
+}
 .sedona-title {
   width: 620px;
   margin-left: 290px;
@@ -517,6 +542,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -920,33 +946,27 @@ body {
   flex-wrap: wrap;
   width: 142px;
   margin: 0;
-  padding: 0;
+
 }
 
-.footer-social-item {
-  width: 47px;
-  height: 40px;
-}
 
 .footer-social-link {
-  display: block;
-  width: 47px;
-  height: 40px;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: #83B3D3;
+}
+.footer-social-link:hover .social-icon{
+
 }
 
 .footer-social-vk {
-  background-image: url("../images/icons/vk-icon.svg")
+
 }
 
 .footer-social-tg {
-  background-image: url("../images/icons/telegram-icon.svg");
+
 }
 
 .footer-social-ut {
-  background-image: url("../images/icons/youtube-icon.svg");
+
 }
 
 .footer-social-item:nth-child(3n) {
@@ -1360,7 +1380,7 @@ body {
 }
 
 .title-form-modal {
-  font-family: 'PT Sans' sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
