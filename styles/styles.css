@@ -70,6 +70,7 @@ body {
   border: none;
   border-radius: 4px;
   overflow: visible;
+  cursor: pointer;
 }
 
 .btn:disabled {
@@ -1054,8 +1055,9 @@ body {
 }
 
 .range-input {
-  width: 117px;
+  width: 87px;
   height: 42px;
+  padding-right: 30px;
   padding-left: 20px;
   font-family: inherit;
   font-weight: 700;
@@ -1074,13 +1076,13 @@ body {
 }
 
 .range-input:active {
-  width: 117px;
+  width: 89px;
   height: 42px;
   border: 2px solid #000000;
 }
 
 .range-input:focus-visible {
-  width: 117px;
+  width: 89px;
   height: 42px;
   background: #F2F2F2;
   border: 2px solid #83B3D3;
